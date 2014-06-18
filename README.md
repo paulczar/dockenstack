@@ -28,7 +28,7 @@ docker build -t dockstack .
 This takes quite a long time... as it has to do a full devstack install.
 
 ```
-docker run -privileged -lxc-conf=aa_profile=unconfined -t -i dockenstack
+docker run --privileged --lxc-conf=aa_profile=unconfined -t -i dockenstack
 ```
 
 ### From index.docker.io
@@ -36,7 +36,7 @@ docker run -privileged -lxc-conf=aa_profile=unconfined -t -i dockenstack
 This is quicker!
 
 ```
-docker run -privileged -lxc-conf=aa_profile=unconfined -t -i paulczar/dockenstack
+docker run --privileged --lxc-conf=aa_profile=unconfined -t -i paulczar/dockenstack
 ```
 
 # Vagrant with Docker
@@ -64,7 +64,7 @@ docker build -t dockenstack .
 ```
 vagrant up
 vagrant ssh
-sudo docker run -privileged -lxc-conf="aa_profile=unconfined" \
+sudo docker run --privileged --lxc-conf="aa_profile=unconfined" \
     -t -i [paulczar/dockenstack|dockenstack]
 ```
 
