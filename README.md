@@ -1,3 +1,8 @@
+# NOT MAINTANED HERE !
+
+Eric Windisch @ Docker maintains this project now at his repo - https://github.com/ewindisch/dockenstack
+
+
 # Docker on Openstack on Docker on Vagrant
 
 Running Openstack with the Docker driver in a Docker container.
